@@ -154,9 +154,9 @@ enterBtn.MouseButton1Click:Connect(function()
 		enterBtn.Text = "✅ Valid Key"
 		enterBtn.BackgroundColor3 = Color3.fromRGB(0, 200, 100)
 		wait(2)
-
-		gui:Destroy()
-		-- ici tu peux appeler ton Main Panel
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/StatesMaster/TLSaver/refs/heads/main/MainPanel.lua"))()
+		gui:Destroy() 
+		
 	else
 		enterBtn.Text = "❌ Invalid Key"
 		enterBtn.BackgroundColor3 = Color3.fromRGB(200,0,0)
